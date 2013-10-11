@@ -1,0 +1,14 @@
+#python compiles
+*.pyo
+*.pyc
+
+#java files
+*.javac
+*.jar
+
+#vim files
+*.sw*
+
+#plot generated files
+*.pdf
+
