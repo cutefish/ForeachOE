@@ -1,4 +1,4 @@
-<project name="apoc" default="compile">
+<project name="foreachoe" default="compile">
 
     <!--Command line arguments-->
 
