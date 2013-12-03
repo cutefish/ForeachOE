@@ -11,6 +11,8 @@
     <!--Project classpath-->
     <path id="classpath">
         <pathelement location="${build.classes}"/>
+        <pathelement location="${basedir}/conf"/>
+        <fileset dir="${basedir}/lib" includes="**/*.jar"/>
     </path>
 
     <!--Targets-->
@@ -64,11 +66,14 @@
     </target>
 
     <!-- Run-->
+    <property name="args" value=""/>
+    <property name="jvmarg" value=""/>
     <target name="run" depends="compile-test">
         <java
             fork="true"
             classname="${name}">
             <arg line="${args}"/>
+            <jvmarg line="${jvmarg}"/>
             <classpath refid="classpath"/>
         </java>
     </target>
