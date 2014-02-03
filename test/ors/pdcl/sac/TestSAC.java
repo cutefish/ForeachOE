@@ -1,7 +1,4 @@
-package test;
-
-import ors.pdcl.sac.SacHeader;
-import ors.pdcl.sac.SacTimeSeries;
+package ors.pdcl.sac;
 
 public class TestSAC {
 
